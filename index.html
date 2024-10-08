@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курси Вітамінів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Оберіть Курс</h1>
+        <form id="courseForm">
+            <label for="courseSelect">Оберіть курс:</label>
+            <select id="courseSelect">
+                <option value="course1">Курс 1: 5 банок Vitabison + 1 банк Neurovita</option>
+                <option value="course2">Курс 2: 4 банки Vitabison + 1 банк Vitaboost</option>
+                <option value="course3">Курс 3: 2 банки Vitabison + 1 банк Neurovita + 1 банк Vitaboost</option>
+            </select>
+
+            <h3>Інформація про клієнта:</h3>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" required>
+
+            <label for="address">Адреса доставки:</label>
+            <input type="text" id="address" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Оформити замовлення</button>
+        </form>
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
