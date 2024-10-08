@@ -42,8 +42,7 @@ document
       order: {
         line_items: lineItems,
         customer: {
-          email: email,
-          phone: "+380967456765",
+          email: email
         },
         shipping_address: {
           first_name: name.split(" ")[0],
@@ -60,7 +59,7 @@ document
 
     console.log("Order Data:", JSON.stringify(orderData, null, 2));
    
-    const proxyUrl = "http://localhost:4000/create-order";
+    const proxyUrl = "https://testshopifyserv.onrender.com/create-order";
 
     try {
       const response = await fetch(proxyUrl, {
