@@ -38,24 +38,26 @@ document
 
     console.log("Line items:", lineItems);
 
-    const orderData = {
-      order: {
-        line_items: lineItems,
-        customer: {
-          email: email
-        },
-        shipping_address: {
-          first_name: name.split(" ")[0],
-          last_name: name.split(" ")[1] || "",
-          address1: address,
-          city: "Ужгород",
-          country: "UA",
-          zip: "88000",
-          phone: "+380968745244",
-        },
-        financial_status: "paid",
-      },
-    };
+ const orderData = {
+   order: {
+     line_items: lineItems, 
+     customer: {
+       first_name: name.split(" ")[0],
+       last_name: name.split(" ")[1] || "",
+       email: email,
+       phone: "+380968745244",
+     },
+     shipping_address: {
+       first_name: name.split(" ")[0],
+       last_name: name.split(" ")[1] || "",
+       address1: address,
+       city: "Ужгород",
+       country: "UA",
+       zip: "88000",
+     },
+     financial_status: "paid",
+   },
+ };
 
     console.log("Order Data:", JSON.stringify(orderData, null, 2));
    
