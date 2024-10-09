@@ -43,7 +43,7 @@ document
           first_name: name,
           last_name: lastName,
           address1: address,
-          city: city,
+          city: city,          
           country: "UA",
           zip: "88000",
         },
