@@ -5,11 +5,12 @@ document
 
     const courseSelect = document.getElementById("courseSelect").value;
     const name = document.getElementById("name").value;
-    const lastName = document.getElementById("lastName").value; 
+    const lastName = document.getElementById("lastName").value;
     const address = document.getElementById("address").value;
+    const city = document.getElementById("city").value;
     const email = document.getElementById("email").value;
-    const phone = "+380968154894"; 
-    
+    const phone = document.getElementById("phone").value;
+
     let lineItems = [];
     if (courseSelect === "course1") {
       lineItems = [
@@ -42,12 +43,9 @@ document
           first_name: name,
           last_name: lastName,
           address1: address,
-          city: "Ужгород",
-          province: "Закарпаття",
+          city: city,
           country: "UA",
           zip: "88000",
-          province_code: "ZA",
-          country_code: "UA",
         },
         financial_status: "paid",
       },
